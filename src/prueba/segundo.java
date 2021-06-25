@@ -39,31 +39,30 @@ público  de clase  TestPunto {
             numMovimiento= datos.nextInt ();
             int valorEntero= (int) Math.piso(Matemáticas.aleatorio()*(4-1+1)+1);
             switch (valorEntero) {
-                caso 1:
-                    dirX=dirX-numMovimiento;
-                    System.out.println(" Movimiento hacia la Izquierda " );
-                    romper;
-                caso 2:
-                    dirY=dirY + numMovimiento;
-                    System.out.println( " Movimiento hacia Arriba " );
+                caso  1 :
+                    dirX = dirX - numMovimiento;
+                    Sistema . fuera . println ( " Movimiento hacia la Izquierda " );
                     romper ;
-                caso 3:
+                caso  2 :
+                    dirY = dirY + numMovimiento;
+                    Sistema . fuera . println ( " Movimiento hacia Arriba " );
+                    romper ;
+                caso  3 :
                     dirY = dirY - numMovimiento;
-                    System.out.println ( " Movimiento hacia Abajo " );
+                    Sistema . fuera . println ( " Movimiento hacia Abajo " );
                     romper ;
-                caso 4:
-                    dirX=dirX + numMovimiento;
-                    Sistema.fuera.println ( " Movimiento hacia la Derecha " );
+                caso  4 :
+                    dirX = dirX + numMovimiento;
+                    Sistema . fuera . println ( " Movimiento hacia la Derecha " );
                 por defecto :
                     romper ;
             }
-            System.out.println( " Estas en la coordenada: " );
-            pnt[i]= nuevo Punto (dirX, dirY);
-            System.out. println (pnt[i]);
+            Sistema . fuera . println ( " Estas en la coordenada: " );
+            pnt [i] =  nuevo  Punto (dirX, dirY);
+            Sistema . fuera . println (pnt [i]);
         }
         distancia = sqrt (pow ((dirX), 2 ) + pow ((dirY), 2 ));
-        System.out.printf(" La distancia total recorrida es de:% .2f \ n",distancia);
+        Sistema . fuera . printf ( " La distancia total recorrida es de:% .2f \ n " , distancia);
     }
 
 }
-
